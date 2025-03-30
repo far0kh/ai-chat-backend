@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { useChat } from "ai/react"
+import { useChat } from "@ai-sdk/react"
 
-export default function ClientExample() {
+export default function Home() {
   const [selectedPipe, setSelectedPipe] = useState("openai-gpt4")
   const [pipes, setPipes] = useState<any[]>([])
 
