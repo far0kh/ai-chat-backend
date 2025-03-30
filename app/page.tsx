@@ -9,7 +9,7 @@ export default function Home() {
 
   // Fetch available pipes on component mount
   useState(() => {
-    fetch("/api/pipes")
+    fetch(`${window.location.origin}/api/pipes`)
       .then((res) => res.json())
       .then((data) => setPipes(data.pipes || []))
       .catch((err) => console.error("Failed to fetch pipes:", err))
